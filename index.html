@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="the-head">
+            <div class="bars">
+              <input type="checkbox" id="check" />
+              <label for="check" class="list-bar">
+                <i class="fas fa-bars"></i>
+              </label>
+              <ul class="the-nav" id="navlist">
+                <li onclick="closelist()"><i class="fas fa-remove"></i></li>
+                <li><a href="#" id="test">تماس با ما</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">قوانین</a></li>
+              </ul>
+            </div>
+
+            <div class="shop-btn">
+              <input type="checkbox" id="shop" onclick="shop()" />
+              <label for="shop" class="shop-btn btn btn-success">
+                سبد خرید
+                <i class="fas fa-shopping-basket"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="preview-shop " id="previewShop">
+        <div class="pre-item">
+          <img src="imgs/slide1.jpg" alt="" width="50px" height="50px" />
+          <h5>عنوان محصول</h5>
+          <p>قیمت: 15000 تومان</p>
+        </div>
+        <hr />
+        <div class="pre-item">
+          <img src="imgs/slide1.jpg" alt="" width="50px" height="50px" />
+          <h5>عنوان محصول</h5>
+          <p>قیمت: 15000 تومان</p>
+        </div>
+        <hr />
+        <div class="pre-item">
+          <img src="imgs/slide1.jpg" alt="" width="50px" height="50px" />
+          <h5>عنوان محصول</h5>
+          <p>قیمت: 15000 تومان</p>
+        </div>
+        <hr />
+        <div class="pre-item">
+          <img src="imgs/slide1.jpg" alt="" width="50px" height="50px" />
+          <h5>عنوان محصول</h5>
+          <p>قیمت: 15000 تومان</p>
+        </div>
+        <hr />
+        <div class="go-shop">
+          <a href="#" class="btn btn-outline-success">رفتن به سبد خرید</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="mt-5">
+      <div class="container mt-5">
+        <div class="row mx-4 mt-5">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active item">
+                <input type="checkbox" id="popup">
+                <label for="popup">
+                  <img
+                  src="imgs/slide1.jpg"
+                  class="d-block"
+                  alt="..."
+                  width="200px"
+                  height="200px"
+                />
+                </label>
+                <div class="caption">
+                  <h5>قیمت: 10000 تومان</h5>
+                    <button class="btn btn-warning">افزودن به سبد خرید</button>
+                </div>
+              </div>
+
+              <div class="carousel-item item">
+                <input type="checkbox" id="popup">
+                <label for="popup">
+                  <img
+                  src="imgs/slide1.jpg"
+                  class="d-block"
+                  alt="..."
+                  width="200px"
+                  height="200px"
+                />
+                </label>
+                <div class="caption">
+                  <h5>قیمت: 10000 تومان</h5>
+                    <button class="btn btn-warning">افزودن به سبد خرید</button>
+                </div>
+              </div>
+
+              <div class="carousel-item  item">
+                <input type="checkbox" id="popup">
+                <label for="popup">
+                  <img
+                  src="imgs/slide1.jpg"
+                  class="d-block"
+                  alt="..."
+                  width="200px"
+                  height="200px"
+                />
+                </label>
+                <div class="caption">
+                  <h5>قیمت: 10000 تومان</h5>
+                    <button class="btn btn-warning">افزودن به سبد خرید</button>
+                </div>
+              </div>
+
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="scrollmenu fixed-bottom">
+        <a href="#">دسته بندی</a>
+        <a href="#">دسته بندی</a>
+        <a href="#">دسته بندی</a>
+        <a href="#">دسته بندی</a>
+        <a href="#">دسته بندی</a>
+      </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
