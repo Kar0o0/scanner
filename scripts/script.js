@@ -29,9 +29,17 @@ function closelist()
 
 function shop(){
     if(document.getElementById("shop").checked == true){
-        document.getElementById("previewShop").style.visibility="visible";
+        document.getElementById("previewShop").style.display="block";
     }
     else{
-        document.getElementById("previewShop").style.visibility="hidden";
+        document.getElementById("previewShop").style.display="none";
     }
+}
+
+function close_pop(){
+    document.getElementById("popContainer").style.display="none";
+}
+
+function popShow(){
+    document.getElementById("popContainer").style.display="block";
 }

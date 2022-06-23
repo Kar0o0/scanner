@@ -86,10 +86,10 @@
             class="carousel slide"
             data-bs-ride="false"
           >
-            <div class="carousel-inner">
+            <div class="carousel-inner items ">
               <div class="carousel-item active item">
                 <input type="checkbox" id="popup">
-                <label for="popup">
+                <label for="popup" onclick="popShow()">
                   <img
                   src="imgs/slide1.jpg"
                   class="d-block"
@@ -104,9 +104,9 @@
                 </div>
               </div>
 
-              <div class="carousel-item item">
+              <div class="carousel-item active item">
                 <input type="checkbox" id="popup">
-                <label for="popup">
+                <label for="popup" onclick="popShow()">
                   <img
                   src="imgs/slide1.jpg"
                   class="d-block"
@@ -121,15 +121,13 @@
                 </div>
               </div>
 
-              <div class="carousel-item  item">
+              <div class="carousel-item active item">
                 <input type="checkbox" id="popup">
-                <label for="popup">
+                <label for="popup" onclick="popShow()">
                   <img
                   src="imgs/slide1.jpg"
                   class="d-block"
                   alt="..."
-                  width="200px"
-                  height="200px"
                 />
                 </label>
                 <div class="caption">
@@ -168,6 +166,16 @@
       </div>
     </section>
 
+    <section>
+      <div class="container">
+        <div class="text-box text-center" id="popContainer" onclick="close_pop()">
+          <h5>title</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati excepturi, voluptate voluptatum harum repellat reiciendis inventore. Debitis hic impedit dolorum blanditiis in sit qui incidunt, dolorem dolor ab animi nobis sunt aspernatur nihil voluptatem voluptatibus accusamus magnam est quisquam?</p>
+          <span class="close-pop "><i class="fas fa-remove"></i></span>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="scrollmenu fixed-bottom">
         <a href="#">دسته بندی</a>
@@ -177,6 +185,7 @@
         <a href="#">دسته بندی</a>
       </div>
     </footer>
+
 
     <!-- JavaScript Bundle with Popper -->
     <script

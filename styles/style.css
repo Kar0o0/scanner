@@ -106,8 +106,8 @@ body {
 
   .preview-shop {
     position: absolute;
-    display: block;
-    visibility: hidden;
+    display: none;
+    visibility: visible;
     float: inline-end;
     z-index: 9;
     background: rgb(224, 224, 224);
@@ -167,9 +167,11 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 200px;
+    height: 200px;
   }
 
-  .carousel-item label{
+  .carousel-item label {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -194,10 +196,33 @@ body {
     background-color: rgb(156, 156, 156);
   }
 
-  #popup{
+  #popup {
     display: none;
   }
 
+  .text-box{
+    z-index: 5;
+    background: #999;
+    width: 60%;
+    position: absolute;
+    display: none;
+    margin: 11rem auto auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+  }
+
+  .text-box p{
+    font-size: .55rem;
+  }
+  .text-box span i{
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 481px) {
@@ -281,16 +306,17 @@ body {
     margin: 0.5rem 0 0 1rem;
   }
 
+
   .preview-shop {
-    position: relative;
-    display: block;
-    visibility: hidden;
-    float: inline-end;
+    position: absolute ;
+    display: none;
+    visibility: visible;
+    left: 0;
     z-index: 9;
     background: rgb(224, 224, 224);
     padding: 0.5rem;
     margin-top: -0.5rem;
-    margin-right: 5rem;
+    margin-left: 5rem;
     border-radius: 1rem;
     align-items: center;
   }
@@ -331,8 +357,10 @@ body {
     text-decoration: none;
   }
 
-  .item {
-    margin-top: 0;
+  .items {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
   }
 
   .slide-btn {
@@ -344,9 +372,11 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 400px;
+    height: 400px;
   }
 
-  .carousel-item label{
+  .carousel-item label {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -374,5 +404,30 @@ body {
 
   #popup{
     display: none;
+  }
+
+  .text-box{
+    z-index: 5;
+    background: #999;
+    width: 60%;
+    position: absolute;
+    display: none;
+    margin: 15rem auto auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .text-box P{
+    font-size: 1.3rem;
+  }
+
+  .text-box span i{
+    font-size: 2rem;
   }
 }
