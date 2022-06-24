@@ -13,6 +13,10 @@ body {
   font-family: "Vazirmatn", sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-family: 'lalezar',sans-serif;
+}
+
 .bars {
   visibility: hidden;
   display: none;
@@ -23,7 +27,29 @@ body {
   display: block;
 }
 
+header {
+  display: none;
+}
+
+section {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
 @media only screen and (max-width: 480px) {
+  header {
+    display: block;
+  }
+  section {
+    display: block;
+  }
+  footer {
+    display: block;
+  }
+
   .the-head {
     position: relative;
     display: flex;
@@ -102,6 +128,16 @@ body {
     justify-content: flex-start;
     float: left;
     margin: 0.5rem 0 0 1rem;
+  }
+
+  .plus{
+    background: rgb(255, 27, 27);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .plus p{
+    color: wheat;
   }
 
   .preview-shop {
@@ -200,9 +236,9 @@ body {
     display: none;
   }
 
-  .text-box{
+  .text-box {
     z-index: 5;
-    background: #999;
+    background: rgb(221, 221, 221);
     width: 60%;
     position: absolute;
     display: none;
@@ -217,15 +253,81 @@ body {
     padding: 1rem 1rem;
   }
 
-  .text-box p{
-    font-size: .55rem;
+  .text-box p {
+    font-size: 0.55rem;
   }
-  .text-box span i{
+  .text-box span i {
     font-size: 1rem;
+  }
+
+
+
+
+  
+  .shop-sec{
+    margin-top: 5rem;
+  }
+
+  .orders{
+    background: rgb(221, 221, 221);
+    padding: 1rem;
+    display: block;
+
+  }
+
+  .order{
+    background: rgb(243, 243, 243);
+    border: solid 3px #999;
+    border-radius: 1rem;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem .4rem;
+    margin: .5rem;
+    
+  }
+
+  .order img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .order p,h4{
+    margin-top: .5rem;
+  }
+
+
+
+
+
+  .submit-message{
+    margin-top: 15rem;
+  }
+
+  .submit-message h1{
+    font-size: 2rem;
   }
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  header {
+    display: block;
+  }
+  section {
+    display: block;
+  }
+  footer {
+    display: block;
+  }
+
   .the-head {
     position: relative;
     display: flex;
@@ -306,9 +408,18 @@ body {
     margin: 0.5rem 0 0 1rem;
   }
 
+  .plus{
+    background: rgb(255, 27, 27);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .plus p{
+    color: wheat;
+  }
 
   .preview-shop {
-    position: absolute ;
+    position: absolute;
     display: none;
     visibility: visible;
     left: 0;
@@ -402,13 +513,13 @@ body {
     background-color: rgb(156, 156, 156);
   }
 
-  #popup{
+  #popup {
     display: none;
   }
 
-  .text-box{
+  .text-box {
     z-index: 5;
-    background: #999;
+    background: rgb(221, 221, 221);
     width: 60%;
     position: absolute;
     display: none;
@@ -423,11 +534,66 @@ body {
     padding: 1rem 1.5rem;
   }
 
-  .text-box P{
+  .text-box P {
     font-size: 1.3rem;
   }
 
-  .text-box span i{
+  .text-box span i {
     font-size: 2rem;
+  }
+
+
+
+
+
+  .shop-sec{
+    margin-top: 5rem;
+  }
+  .orders{
+    background: rgb(221, 221, 221);
+    padding: 1rem;
+    display: block;
+
+  }
+
+  .order{
+    background: rgb(243, 243, 243);
+    border: solid 3px #999;
+    border-radius: 1rem;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem .4rem;
+    margin: .5rem;
+    
+  }
+
+  .order img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .order p,h4{
+    margin-top: .5rem;
+  }
+
+
+
+
+
+  .submit-message{
+    margin-top: 25rem;
+  }
+
+  .submit-message h1{
+    font-size: 4rem;
   }
 }
